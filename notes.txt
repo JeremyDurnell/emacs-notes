@@ -1,0 +1,84 @@
+M-x* means M-x "command", ex. M-x save-buffer would save
+M-: means ALT+SHIFT+: (eval-expression)
+
+Ido mode
+M-x ido-mode
+
+find-file  C-x C-f
+  * will make new file, if none exists (type name of file, press RET)
+  * temp disable interactive mode (use wildcards) with C-f
+  * C-d invokes Dired file manager, close with C-x k RET
+
+Help
+
+  * C-h m describe-mode, shows every key binding for buffer
+
+  VERY USEFUL, BUT KEEP IN MIND THAT NOT ALL KEY BINDINGS ARE CORRECT.
+  LOOK IN MENUS FOR HINTS ON KEYBINDS, OR LOOK AT LISP CODE.
+  
+  * C-h k looks up key-sequence, returns command-name (where-is)
+  * C-h w looks up command-name, returns key-sequence
+
+Save (save-buffer)   C-x C-s
+Save As (write-file) C-x C-w
+switch-to-buffer     C-x b
+kill-buffer          C-x k
+list-buffers         C-x C-b
+
+Buffer means temp. content of file in memory
+File means physical copy of file on dis
+Major mode - only one active at time, per buffer. Ex. .c extension activates C major
+  mode to enable syntax highlighting
+Minor modes - enabled/disabled as needed; can have more than one at a time. Ex. Auto Fill 
+
+iBuffer (omit space)
+'/ M' - 's RET' major mode
+'/ /' - 's /' clear filters
+'/ g' - 's g' name filter group
+'g O' - opens buffer in another window, ibuffer-visit-buffer-other-window
+'C o' - opens buffer in another window no select
+VI Navigation
+h left
+l right
+j down
+k up
+
+Basic vi Commands (navigation)
+https://docs.oracle.com/cd/E19253-01/806-7612/6jgfmsvqf/index.html
+
+Set mark (emacs style)
+https://ftp.gnu.org/old-gnu/Manuals/emacs-21.2/html_chapter/emacs_11.html
+
+C-@ set-mark-command
+C-u C-@ pop-mark (go back)
+C-x C-x exchange point and mark
+C-x C-@ pop-global-mark (read about Mark Ring)
+
+Set mark (Vi style)
+ma evil-set-marker
+mb '''
+mc '''
+mA sets global marker
+
+Goto mark  (same buffer)
+'a
+'b
+'c
+
+Goto global mark (currently bugged)
+'A
+
+Undo:
+C-/
+
+Redo:
+C-r
+
+
+M-/ or 'M /' omit dash and space
+thisIsaVeryVeryVeryVeryVeryLongWord
+thisIsaVeryVeryVeryVeryVeryLongWord
+randomWord
+randomWord randomWord
+
+sup

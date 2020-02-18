@@ -1,0 +1,19 @@
+<end> (translated from <S-end>) runs the command move-end-of-line
+(found in global-map), which is an interactive compiled Lisp function
+in ‘simple.el’.
+
+It is bound to <end>.
+
+(move-end-of-line ARG)
+
+Move point to end of current line as displayed.
+With argument ARG not nil or 1, move forward ARG - 1 lines first.
+If point reaches the beginning or end of buffer, it stops there.
+
+To ignore the effects of the ‘intangible’ text or overlay
+property, bind ‘inhibit-point-motion-hooks’ to t.
+If there is an image in the current line, this function
+disregards newlines that are part of the text on which the image
+rests.
+
+[back]

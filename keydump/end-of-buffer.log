@@ -1,0 +1,20 @@
+<C-end> (translated from <C-S-end>) runs the command end-of-buffer
+(found in global-map), which is an interactive compiled Lisp function
+in ‘simple.el’.
+
+It is bound to <C-end>, M->, <menu-bar> <edit> <goto> <end-of-buf>.
+
+(end-of-buffer &optional ARG)
+
+This function is for interactive use only;
+in Lisp code use `(goto-char (point-max))' instead.
+
+Move point to the end of the buffer.
+With numeric arg N, put point N/10 of the way from the end.
+If the buffer is narrowed, this command uses the end of the
+accessible part of the buffer.
+
+Push mark at previous position, unless either a C-u prefix
+is supplied, or Transient Mark mode is enabled and the mark is active.
+
+[back]

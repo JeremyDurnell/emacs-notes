@@ -1,0 +1,19 @@
+<home> (translated from <S-home>) runs the command
+move-beginning-of-line (found in global-map), which is an interactive
+compiled Lisp function in ‘simple.el’.
+
+It is bound to C-a, <home>.
+
+(move-beginning-of-line ARG)
+
+Move point to beginning of current line as displayed.
+(If there’s an image in the line, this disregards newlines
+which are part of the text that the image rests on.)
+
+With argument ARG not nil or 1, move forward ARG - 1 lines first.
+If point reaches the beginning or end of buffer, it stops there.
+(But if the buffer doesn’t end in a newline, it stops at the
+beginning of the last line.)
+To ignore intangibility, bind ‘inhibit-point-motion-hooks’ to t.
+
+[back]

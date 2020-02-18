@@ -1,0 +1,21 @@
+<C-home> (translated from <C-S-home>) runs the command
+beginning-of-buffer (found in global-map), which is an interactive
+compiled Lisp function in ‘simple.el’.
+
+It is bound to <begin>, <C-home>, M-<, <menu-bar> <edit> <goto>
+<beg-of-buf>.
+
+(beginning-of-buffer &optional ARG)
+
+This function is for interactive use only;
+in Lisp code use `(goto-char (point-min))' instead.
+
+Move point to the beginning of the buffer.
+With numeric arg N, put point N/10 of the way from the beginning.
+If the buffer is narrowed, this command uses the beginning of the
+accessible part of the buffer.
+
+Push mark at previous position, unless either a C-u prefix
+is supplied, or Transient Mark mode is enabled and the mark is active.
+
+[back]
